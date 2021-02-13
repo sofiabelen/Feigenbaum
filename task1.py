@@ -33,8 +33,8 @@ def getValues(rsteps, rstart, rend):
     return rvalues, xlim
 
 ## PLotting
-sns.set(context='notebook', palette='colorblind')
-fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
+sns.set(palette='colorblind')
+fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True, figsize=(13, 7))
 fig.suptitle(r'Limiting value of $4rx_n(1 - x_n)$')
 ax1.set_xlabel(r'$r$')
 ax1.set_ylabel(r'$x^* = \lim_{n \to \infty} 4rx_n(1 - x_n)$')
@@ -49,5 +49,3 @@ ax2.scatter(rvalues, xlim, s=0.5)
 fig.savefig("img/task1.pdf")
 fig.savefig("img/task1.png")
 fig.savefig("img/task1.svg")
-
-plt.show()
