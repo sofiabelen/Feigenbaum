@@ -41,11 +41,11 @@ ax1.set_ylabel(r'$x^* = \lim_{n \to \infty} 4rx_n(1 - x_n)$')
 ax2.set_xlabel(r'$r$')
 
 rvalues, xlim = getValues(rsteps, 0, 1)
-ax1.scatter(rvalues, xlim, s=0.5)
+ax1.scatter(rvalues, xlim, s=0.4)
 
 rvalues, xlim = getValues(rsteps, .86, 1)
-ax2.scatter(rvalues, xlim, s=0.5)
+ax2.scatter(rvalues, xlim, s=0.4)
 
 fig.savefig("img/task1.pdf")
-fig.savefig("img/task1.png")
+fig.savefig("img/task1.png", dpi=300)
 fig.savefig("img/task1.svg")

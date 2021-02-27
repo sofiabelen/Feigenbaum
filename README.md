@@ -1,3 +1,3 @@
 # Feigenbaum
 
-![Alt text](img/task1.svg)
+![Alt text](img/task2.png)
