@@ -55,7 +55,6 @@ def getBifurcations(rsteps, rstart, rend, xlim):
                 j += 1
                 curperiod = period
         i += 1
-
     return rbif
 
 ## PLotting
